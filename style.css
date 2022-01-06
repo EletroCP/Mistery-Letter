@@ -49,3 +49,7 @@
 .skewright{
   transform: skewX(-10deg);
 }
+
+#carta-gerada{
+  display: block;
+}
