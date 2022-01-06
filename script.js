@@ -23,13 +23,13 @@ function classeRandom(){
 
   let style = ["newspaper", "magazine1", "magazine2"]
   let size = ["medium", "big", "reallybig"]
-  let rotate = ["rotateleft", "rotaterigth"]
-  let tilt = ["skewleft", "skewrigth"]
+  let rotate = ["rotateleft", "rotateright"]
+  let tilt = ["skewleft", "skewright"]
 
-  estilo.push(style[parseInt(Math.random() * 3)])
-  estilo.push(size[parseInt(Math.random() * 3)])
-  estilo.push(rotate[parseInt(Math.random() * 2)])
-  estilo.push(tilt[parseInt(Math.random() * 2)])
+  estilo.push(style[parseInt(Math.random() * style.length)])
+  estilo.push(size[parseInt(Math.random() * size.length)])
+  estilo.push(rotate[parseInt(Math.random() * rotate.length)])
+  estilo.push(tilt[parseInt(Math.random() * tilt.length)])
 }
 function estiloCarta() {
   let partes = cartaTexto.value.split(" ")
