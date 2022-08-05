@@ -50,6 +50,7 @@ function criarCarta() {
     const element = document.createElement('span');
     element.innerHTML = 'Por favor, digite o conteúdo da carta.';
     document.getElementById('carta-gerada').appendChild(element);
+    return;
   }
   classeRandom();
   estiloCarta();
