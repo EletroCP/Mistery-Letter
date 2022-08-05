@@ -24,8 +24,7 @@ function newStyle() {
 }
 
 function estiloCarta() {
-  const partes = cartaTexto.value.split(' ');
-
+  const partes = cartaTexto.value.trim().split(' ');
   for (let index = 0; index < partes.length; index += 1) {
     const element = document.createElement('span');
     element.addEventListener('click', newStyle);
@@ -45,8 +44,9 @@ function criarCarta() {
   document.querySelectorAll('span').forEach((remove) => {
     remove.remove();
   });
+  const value = cartaTexto.value.trim();
   //  ref indexOf https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf;
-  if (cartaTexto.value === '' || document.getElementById('carta-texto').value.indexOf(' ') === 0) {
+  if (value === '' || value.indexOf(' ') === 0) {
     const element = document.createElement('span');
     element.innerHTML = 'Por favor, digite o conteúdo da carta.';
     document.getElementById('carta-gerada').appendChild(element);
