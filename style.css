@@ -54,6 +54,7 @@ input:focus {
   max-width: 99vw;
   min-height: 94vh;
   text-align: center;
+  margin: 10px;
 }
 
 #hud {
