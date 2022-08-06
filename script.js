@@ -56,3 +56,10 @@ function criarCarta() {
   estiloCarta();
 }
 document.getElementById('criar-carta').addEventListener('click', criarCarta);
+
+const closeSpan = document.getElementById('closeSpan');
+const span = document.getElementById('howToUse');
+
+closeSpan.addEventListener('click', () => {
+  span.style.display = 'none';
+});

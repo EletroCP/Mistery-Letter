@@ -1,13 +1,59 @@
+* {
+  font-family: Uchen, serif;
+}
+
 body {
   background-image: url('./images/background.jpg');
   background-size: cover;
+  padding: 0;
+  margin: 0;
 }
+
+input:focus {
+  box-shadow: 0;
+  outline: 0;
+}
+
+
+#howToUse {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.637);
+  display: flex;
+  justify-content: center;
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+}
+
+#useContainer {
+  background-color: antiquewhite;
+  height: 35vh;
+  width: 40vw;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+#spanText {
+  word-spacing: -5px;
+}
+
+#closeSpan {
+  border: 1.5px solid white;
+  width: 80px;
+  height: 45px;
+  background-color: teal;
+}
+
 
 #main {
   background-color: rgba(245, 245, 245, 0.589);
+  height: 94%;
   max-width: 99vw;
-  max-height: 99vh;
-  height: 94vh;
+  min-height: 94vh;
+  text-align: center;
 }
 
 #hud {
@@ -85,4 +131,8 @@ body {
 
 #carta-gerada {
   display: block;
+}
+
+#carta-contador {
+  color: transparent;
 }
